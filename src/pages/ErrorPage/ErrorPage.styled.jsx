@@ -1,18 +1,55 @@
 import styled from '@emotion/styled';
 
-export const Container = styled.div`
+export const ContainerError = styled.div`
   display: flex;
-  justify-content: center;
   align-items: center;
-  padding-top: 500px;
+  justify-content: center;
+  margin-top: 188px;
+  margin-bottom: 260px;
+  margin-right: auto;
+  margin-left: auto;
+
+  @media (min-width: 768px) {
+    margin-top: 175px;
+    margin-bottom: 195px;
+  }
+
+  @media (min-width: 1440px) {
+    margin-top: 200px;
+    margin-bottom: 140px;
+  }
 `;
 
-export const Title = styled.h1`
-  color: #ffffff;
-  text-shadow:
-    0 0 5px #00baff,
-    0 0 10px #00baff,
-    0 0 20px #00baff,
-    0 0 40px #00baff,
-    0 0 80px #00baff;
+export const Wrapper = styled.div`
+  padding-top: 200px;
+  padding-bottom: 140px;
+  display: flex;
+`;
+
+export const Image = styled.img`
+  width: 123px;
+  height: 156px;
+  flex-shrink: 0;
+
+  @media (min-width: 768px) {
+    width: 158px;
+    height: 201px;
+  }
+`;
+
+export const Title = styled.p`
+  color: rgba(243, 243, 243, 0.1);
+  font-size: 120px;
+  font-weight: 600;
+  line-height: 1.02;
+
+  @media (min-width: 768px) {
+    font-size: 150px;
+    line-height: 0.82;
+  }
+
+  @media (min-width: 1440px) {
+    font-size: 200px;
+    line-height: 1;
+  }
 `;

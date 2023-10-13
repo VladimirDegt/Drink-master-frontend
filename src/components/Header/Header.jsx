@@ -1,28 +1,54 @@
-import {
-  HeaderContainer,
-  Navigation,
-  StyledLink,
-  IconWrapper,
-} from './Header.styled';
-import sprite from '../../assets/sprite.svg';
+import { HeaderEl } from './Header.styled';
+import { Container } from '../SharedLayout/SharedLayout.styled';
+import { HeaderContainer } from './Header.styled';
+import Navigation from './Navigation/Navigation';
+import { Logo } from './Logo/Logo';
+import { UserLogo } from './UserLogo/UserLogo';
+import { useEffect, useState } from 'react';
+import { BurgerBtn } from './BurgerBtn/BurgerBtn';
 
-export const Header = () => {
+// screenSize______________
+
+const screenChecker = () => {
+  const { innerWidth: width, innerHeight: height } = window;
+  return {
+    width,
+    height,
+  };
+};
+
+const useScreen = () => {
+  const [screenSize, setScreenSize] = useState(screenChecker());
+
+  useEffect(() => {
+    function handleResize() {
+      setScreenSize(screenChecker());
+    }
+
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
+  return screenSize;
+};
+
+// _______________________________
+
+const Header = () => {
+  const { width } = useScreen();
+
   return (
-    <HeaderContainer>
-      <Navigation>
-        <StyledLink to="/first">
-          <IconWrapper>
-            <use href={`${sprite}#icon-logo`} />
-          </IconWrapper>
-          First
-        </StyledLink>
-        <StyledLink to="/second">
-          <IconWrapper>
-            <use href={`${sprite}#icon-logo`} />
-          </IconWrapper>
-          Second
-        </StyledLink>
-      </Navigation>
-    </HeaderContainer>
+    <HeaderEl>
+      <Container>
+        <HeaderContainer>
+          <Logo />
+          {width >= 1280 && <Navigation />}
+          <UserLogo />
+          {width < 1280 && <BurgerBtn />}
+        </HeaderContainer>
+      </Container>
+    </HeaderEl>
   );
 };
+
+export default Header;
