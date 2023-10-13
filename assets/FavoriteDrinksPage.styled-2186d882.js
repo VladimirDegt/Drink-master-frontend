@@ -1,4 +1,4 @@
-import{r as o,n as i,j as n}from"./index-7ed2c31f.js";function m(){const[t,a]=o.useState();return o.useEffect(()=>{function e(){window.innerWidth<1438?a(4):a(9)}return window.addEventListener("resize",e),e(),()=>{window.removeEventListener("resize",e)}},[]),t}const r="/drinkMaster-Team-1/assets/asr_blue_iced_tea_1-e64cabfc.png",p=i.div`
+import{r as o,n as i,j as e}from"./index-419968ba.js";function m(){const[t,a]=o.useState();return o.useEffect(()=>{function n(){window.innerWidth<1438?a(4):a(9)}return window.addEventListener("resize",n),n(),()=>{window.removeEventListener("resize",n)}},[]),t}const r="/Drink-master-frontend/assets/asr_blue_iced_tea_1-e64cabfc.png",p=i.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -46,7 +46,7 @@ import{r as o,n as i,j as n}from"./index-7ed2c31f.js";function m(){const[t,a]=o.
   @media (min-width: 1440px) {
     // margin-top: 27px;
   }
-`,l=({text:t})=>n.jsxs(p,{children:[n.jsx(s,{src:r,alt:"blue iced tea"}),n.jsxs(d,{children:[" ",t]})]}),c="/drinkMaster-Team-1/assets/trash-fc07c8dc.svg",g=i.ul`
+`,l=({text:t})=>e.jsxs(p,{children:[e.jsx(s,{src:r,alt:"blue iced tea"}),e.jsxs(d,{children:[" ",t]})]}),c="/Drink-master-frontend/assets/trash-fc07c8dc.svg",g=i.ul`
   padding: 0;
   margin: 0;
   margin-top: 40px;
@@ -205,7 +205,7 @@ import{r as o,n as i,j as n}from"./index-7ed2c31f.js";function m(){const[t,a]=o.
 
   text-align: center;
   margin-bottom: 20px;
-`;const T=i.div`
+`;const j=i.div`
   width: 100%;
   padding-top: 80px;
   padding-bottom: 80px;
@@ -224,4 +224,4 @@ import{r as o,n as i,j as n}from"./index-7ed2c31f.js";function m(){const[t,a]=o.
   //     padding: 158px 100px;
   //   }
   //
-`;export{k as B,h as C,g as D,w as I,l as N,f as T,u as a,b,v as c,y as d,z as e,T as f,c as i,m as u};
+`;export{k as B,h as C,g as D,w as I,l as N,f as T,u as a,b,v as c,y as d,z as e,j as f,c as i,m as u};

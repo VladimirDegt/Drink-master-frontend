@@ -1,4 +1,4 @@
-import{n as o,j as i,L as c,r as s,s as n}from"./index-7ed2c31f.js";import{g as x}from"./operationsDrinks-902085a2.js";import{C as l}from"./CardCoctail-0f64ef99.js";const m=o.ul`
+import{n as e,j as i,L as c,r as s,s as n}from"./index-419968ba.js";import{g as x}from"./operationsDrinks-f16b7d7f.js";import{C as l}from"./CardCoctail-afddac5a.js";const m=e.ul`
   display: flex;
   align-items: center;
   justifu-content: center;
@@ -32,7 +32,7 @@ import{n as o,j as i,L as c,r as s,s as n}from"./index-7ed2c31f.js";import{g as 
       display: block;
     }
   }
-`,h=o.h2`
+`,h=e.h2`
   margin-bottom: 40px;
   font-size: 40px;
   font-weight: 600;
@@ -49,12 +49,12 @@ import{n as o,j as i,L as c,r as s,s as n}from"./index-7ed2c31f.js";import{g as 
   @media (min-width: 768px) {
     font-size: 40px;
   }
-`,g=({drinks:r})=>i.jsx(i.Fragment,{children:r.map(([e,d])=>i.jsxs("div",{children:[i.jsx(h,{children:e}),i.jsx(m,{children:d.map(({_id:t,drink:a,drinkThumb:p})=>i.jsx(l,{_id:t,drink:a,drinkThumb:p},t))})]},e))}),f=o.div`
+`,g=({drinks:r})=>i.jsx(i.Fragment,{children:r.map(([o,d])=>i.jsxs("div",{children:[i.jsx(h,{children:o}),i.jsx(m,{children:d.map(({_id:t,drink:a,drinkThumb:p})=>i.jsx(l,{_id:t,drink:a,drinkThumb:p},t))})]},o))}),f=e.div`
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 80px;
-`,w=o(c)`
+`,w=e(c)`
   font-size: 16px;
   color: var(--blue-color);
   background-color: var(--white-color);
@@ -86,7 +86,7 @@ import{n as o,j as i,L as c,r as s,s as n}from"./index-7ed2c31f.js";import{g as 
     margin-bottom: 160px;
   }
 
-`,b=()=>{const[r,e]=s.useState([]);return s.useEffect(()=>{(async()=>{try{const t=await x(),a=Object.entries(t);e([...a])}catch(t){console.error("Error fetching drinks:",t)}})()},[]),i.jsxs(f,{children:[i.jsx(g,{drinks:r}),i.jsx(w,{to:"/drinks",children:"Other Drinks"})]})},u="/drinkMaster-Team-1/assets/coctailPhoto-1d38e785.png",y=n.div`
+`,b=()=>{const[r,o]=s.useState([]);return s.useEffect(()=>{(async()=>{try{const t=await x(),a=Object.entries(t);o([...a])}catch(t){console.error("Error fetching drinks:",t)}})()},[]),i.jsxs(f,{children:[i.jsx(g,{drinks:r}),i.jsx(w,{to:"/drinks",children:"Other Drinks"})]})},u="/Drink-master-frontend/assets/coctailPhoto-1d38e785.png",y=n.div`
   display: flex;
 
   @media screen and (max-width: 767px) {
@@ -228,4 +228,4 @@ import{n as o,j as i,L as c,r as s,s as n}from"./index-7ed2c31f.js";import{g as 
   @media screen and (min-width: 1280px) {
     margin-right: 130px;
   }
-`,T=()=>i.jsx(y,{children:i.jsxs(D,{children:[i.jsxs(B,{children:[i.jsxs(v,{children:["Craft Your Perfect ",i.jsx("b",{})," Drink with Drink Master"]}),i.jsx(j,{children:"Unlock your inner mixologist with Drink Master, your one-stop destination for exploring, crafting, and mastering the world´s finest beverages."}),i.jsx(z,{to:"/add",children:"Add drink"})]}),i.jsx(k,{src:u,alt:"main-coctail"}),i.jsx(C,{})]})}),L=()=>i.jsxs(i.Fragment,{children:[i.jsx(T,{}),i.jsx(b,{})]});export{L as default};
+`,A=()=>i.jsx(y,{children:i.jsxs(D,{children:[i.jsxs(B,{children:[i.jsxs(v,{children:["Craft Your Perfect ",i.jsx("b",{})," Drink with Drink Master"]}),i.jsx(j,{children:"Unlock your inner mixologist with Drink Master, your one-stop destination for exploring, crafting, and mastering the world´s finest beverages."}),i.jsx(z,{to:"/add",children:"Add drink"})]}),i.jsx(k,{src:u,alt:"main-coctail"}),i.jsx(C,{})]})}),P=()=>i.jsxs(i.Fragment,{children:[i.jsx(A,{}),i.jsx(b,{})]});export{P as default};
