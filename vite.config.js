@@ -13,5 +13,5 @@ export default defineConfig({
       components: '/src/components',
     },
   },
-  base: '/drinkMaster-Team-1/',
+  base: '/Drink-master-frontend/',
 });
